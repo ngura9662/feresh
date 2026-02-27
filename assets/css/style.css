@@ -57,7 +57,7 @@ input{
 
 /* BUTTON */
 button{
-    width:100%;
+    width:107%;
     margin-top:20px;
     padding:10px;
     background:#e6e6e6;
@@ -66,9 +66,7 @@ button{
     font-size:15px;
 }
 
-button:hover{
-    background:#dcdcdc;
-}
+
 
 /* ERROR */
 .error{
@@ -78,9 +76,13 @@ button:hover{
 
 /* FOOTER */
 .footer{
-    margin-top:40px;
+    padding-top: 25px;
+    margin-top: 0px;
+    height: 50px;
+    border: solid black 1px;
     color:#555;
     font-size:14px;
+    background-color: #c6c4c4;
 }
 /* =========================
    DASHBOARD LAYOUT
@@ -89,7 +91,7 @@ button:hover{
 /* HEADER BAR */
 .topbar{
     width:100%;
-    background:#ccc;
+    background:#c6c4c4;
     color:black;
     padding:15px;
     font-size:18px;
@@ -103,6 +105,7 @@ button:hover{
     min-height:70vh;
     border:1px solid #000;
     background:#fff;
+    text-align: left;
 }
 
 /* SIDEBAR */
@@ -110,6 +113,8 @@ button:hover{
     width:220px;
     background:#fff;
     border-right:1px solid #000;
+    text-align: left;
+    padding-left: 15px;
 }
 
 .sidebar a{
@@ -180,7 +185,8 @@ table tr:hover{
 /* Panel used on admin add-user page */
 .form-panel{
     width:520px;
-    margin:0 auto;
+
+    text-align: left;
 }
 
 .panel-header{
@@ -189,6 +195,7 @@ table tr:hover{
     border:1px solid #e0e0e0;
     color:#333;
     font-weight:600;
+    width: 425px;
 }
 
 .form-box{
@@ -198,11 +205,13 @@ table tr:hover{
     border:1px solid #e9e9e9;
     border-radius:2px;
     box-shadow:none;
-    margin:14px auto 0;
+    margin:0px auto 0;
+    margin-left: 0px;
 }
 
 .form-box .row{
     display:flex;
+    text-align: left;
     align-items:center;
     margin-bottom:10px;
 }
@@ -230,6 +239,6 @@ table tr:hover{
     margin:8px auto 0;
 }
 
-.form-box button:hover{
-    background:#e0e0e0;
+.form-panel tr td a {
+ color: red;
 }

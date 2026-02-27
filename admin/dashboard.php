@@ -16,7 +16,7 @@ if($_SESSION['role']!="admin") header("Location: ../index.php");
 
 <div class="dashboard">
     <div class="sidebar">
-        <h3>MENU</h3>
+        <h3 style="padding-left: 15px; ;">MENU</h3>
         <a href="add_user.php">Add User</a>
         <a href="view_users.php">View Users</a>
         <a href="view_reviews.php">View Reviews</a>
@@ -24,12 +24,12 @@ if($_SESSION['role']!="admin") header("Location: ../index.php");
     </div>
 
     <div class="main-content">
-        <h2>Admin Dashboard</h2>
+        <h2>ADMIN DASHBOARD</h2>
         <!-- additional admin dashboard information could go here -->
     </div>
 </div>
 
-<p class="footer">SUZA ©COPYRIGHT 2026</p>
+<p class="footer">SUZA @COPYRIGHT 2026</p>
 
 </body>
 </html>

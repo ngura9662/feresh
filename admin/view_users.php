@@ -55,7 +55,7 @@ $users=$pdo->query("SELECT * FROM users");
             <td><?= htmlspecialchars($u['username']) ?></td>
             <td><?= htmlspecialchars($u['full_name']) ?></td>
             <td><?= htmlspecialchars($u['user_role']) ?></td>
-            <td><a href="?delete=<?= $u['user_id'] ?>">Delete</a></td>
+            <td class="user-delete"><a href="?delete=<?= $u['user_id'] ?>">Delete</a></td>
         </tr>
         <?php endforeach; ?>
         </table>

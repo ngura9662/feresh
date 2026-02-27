@@ -1,13 +1,4 @@
-<?php
-$host = "localhost";
-$db   = "bookreviewdb";
-$user = "root";
-$pass = "Sungurathegenius9662.";
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$db",$user,$pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e){
-    die("Connection failed: ".$e->getMessage());
-}
+<?php
+$pdo = new PDO("mysql:host=localhost;dbname=bookreviewdb", "root", "Sungurathegenius9662.");
 ?>

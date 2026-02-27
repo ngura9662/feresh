@@ -32,10 +32,10 @@
     }
     ?>
 
-    <form action="includes/login_handler.php" method="POST">
+    <form action="includes/login_hander.php" method="POST">
 
         <label>Username: <span>*</span></label>
-        <input type="text" name="username" required>
+        <input type="text" name="username" required >
 
         <label>Password: <span>*</span></label>
         <input type="password" name="password" required>
