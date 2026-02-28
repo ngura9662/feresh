@@ -25,11 +25,13 @@ $reviews=$stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>View My Reviews</title>
-    <?php include '../includes/header.php'; ?>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
-<div class="topbar">ONLINE BOOK REVIEW SYSTEM</div>
+<?php
+      include "../includes/header.php";
+    ?>
 
 <div class="dashboard">
     <div class="sidebar">
@@ -62,7 +64,9 @@ $reviews=$stmt->fetchAll();
     </div>
 </div>
 
-<p class="footer">SUZA ©COPYRIGHT 2026</p>
+ <?php
+   include "../includes/footer.php";
+   ?>
 
 </body>
 </html>

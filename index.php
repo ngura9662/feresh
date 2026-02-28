@@ -12,11 +12,7 @@
 </head>
 <body>
 
-<!-- SYSTEM TITLE -->
-
 <h2 class="main-title">ONLINE BOOK REVIEW SYSTEM</h2>
-
-<!-- LOGIN BOX -->
 
 <div class="login-container">
 
@@ -38,8 +34,7 @@
         <input type="text" name="username" required >
 
         <label>Password: <span>*</span></label>
-        <input type="password" name="password" required>
-
+        <input type="password"  name="password"  required>
         <button id="log" type="submit">Login</button>
 
     </form>
@@ -47,8 +42,6 @@
 </div>
 
 </div>
-
-<!-- FOOTER -->
 
 <p class="footer">SUZA ©LICOYRIGHT 2026</p>
 

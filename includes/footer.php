@@ -1,0 +1,1 @@
+<p class="footer">SUZA @COPYRIGHT 2026</p>

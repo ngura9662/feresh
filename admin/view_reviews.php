@@ -24,50 +24,54 @@ $reviews=$pdo->query($sql);
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>View Reviews</title>
-    <?php include '../includes/header.php'; ?>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>View Reviews</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+ <body>
 
-<div class="topbar">ONLINE BOOK REVIEW SYSTEM</div>
+            <?php
+                include "../includes/header.php";
+            ?>
 
-<div class="dashboard">
-    <div class="sidebar">
-        <h3>MENU</h3>
-        <a href="add_user.php">Add User</a>
-        <a href="view_users.php">View Users</a>
-        <a href="view_reviews.php">View Reviews</a>
-        <a href="../logout.php">Logout</a>
-    </div>
+            <div class="dashboard">
+                <div class="sidebar">
+                    <h3>MENU</h3>
+                    <a href="add_user.php">Add User</a>
+                    <a href="view_users.php">View Users</a>
+                    <a href="view_reviews.php">View Reviews</a>
+                    <a href="../logout.php">Logout</a>
+                </div>
 
-    <div class="main-content">
-        <h2>VIEW REVIEWS</h2>
+                <div class="main-content">
+                    <h2>VIEW REVIEWS</h2>
 
-        <div class="form-panel">
-            <table>
-            <tr>
-                <th>Reader Name</th>
-                <th>Book Title</th>
-                <th>Review Date</th>
-                <th>Action</th>
-            </tr>
+                    <div class="form-panel">
+                        <table>
+                            <tr>
+                                <th>Reader Name</th>
+                                <th>Book Title</th>
+                                <th>Review Date</th>
+                                <th>Action</th>
+                            </tr>
 
-        <?php foreach($reviews as $r): ?>
-        <tr>
-            <td><?= htmlspecialchars($r['full_name']) ?></td>
-            <td><?= htmlspecialchars($r['book_title']) ?></td>
-            <td><?= htmlspecialchars($r['review_date']) ?></td>
-            <td><a href="?delete=<?= $r['review_id'] ?>">Delete</a></td>
-        </tr>
-        <?php endforeach; ?>
-        </table>
-        </div>
-    </div>
-</div>
+                            <?php foreach($reviews as $r): ?>
+                            <tr>
+                                <td><?= htmlspecialchars($r['full_name']) ?></td>
+                                <td><?= htmlspecialchars($r['book_title']) ?></td>
+                                <td><?= htmlspecialchars($r['review_date']) ?></td>
+                                <td><a href="?delete=<?= $r['review_id'] ?>">Delete</a></td>
+                            </tr>
+                            <?php endforeach; ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-<p class="footer">SUZA ©COPYRIGHT 2026</p>
+            <?php
+            include "../includes/footer.php";
+            ?>
 
-</body>
+  </body>
 </html>

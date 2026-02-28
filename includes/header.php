@@ -1,1 +1,1 @@
-<link rel="stylesheet" href="../assets/css/style.css">
+<div class="topbar">ONLINE BOOK REVIEW SYSTEM</div>

@@ -14,11 +14,13 @@ if(
 <head>
     <meta charset="UTF-8">
     <title>Add Review</title>
-    <?php include '../includes/header.php'; ?>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
-<div class="topbar">ONLINE BOOK REVIEW SYSTEM</div>
+<?php
+      include "../includes/header.php";
+    ?>
 
 <div class="dashboard">
     <div class="sidebar">
@@ -51,7 +53,9 @@ if(
     </div>
 </div>
 
-<p class="footer">SUZA ©COPYRIGHT 2026</p>
+ <?php
+   include "../includes/footer.php";
+   ?>
 
 </body>
 </html>

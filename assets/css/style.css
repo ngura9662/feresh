@@ -4,14 +4,12 @@ body{
     text-align:center;
 }
 
-/* TITLE */
 .main-title{
     margin-top:40px;
     font-weight:normal;
     letter-spacing:1px;
 }
 
-/* LOGIN BOX */
 .login-container{
     width:420px;
     margin:40px auto;
@@ -21,7 +19,6 @@ body{
     box-shadow:0 0 6px rgba(0,0,0,0.1);
 }
 
-/* BLUE HEADER */
 .login-header{
     background:linear-gradient(#6fb3c8,#4f9bb3);
     color:white;
@@ -30,7 +27,6 @@ body{
     border-radius:8px 8px 0 0;
 }
 
-/* BODY */
 .login-body{
     padding:20px;
     text-align:left;
@@ -55,7 +51,6 @@ input{
     border-radius:4px;
 }
 
-/* BUTTON */
 button{
     width:107%;
     margin-top:20px;
@@ -67,14 +62,11 @@ button{
 }
 
 
-
-/* ERROR */
 .error{
     color:red;
     font-size:14px;
 }
 
-/* FOOTER */
 .footer{
     padding-top: 25px;
     margin-top: 0px;
@@ -84,11 +76,8 @@ button{
     font-size:14px;
     background-color: #c6c4c4;
 }
-/* =========================
-   DASHBOARD LAYOUT
-========================= */
 
-/* HEADER BAR */
+
 .topbar{
     width:100%;
     background:#c6c4c4;
@@ -99,7 +88,6 @@ button{
     text-align:center;
 }
 
-/* MAIN AREA */
 .dashboard{
     display:flex;
     min-height:70vh;
@@ -108,7 +96,7 @@ button{
     text-align: left;
 }
 
-/* SIDEBAR */
+
 .sidebar{
     width:220px;
     background:#fff;
@@ -128,7 +116,6 @@ button{
     background:#eee;
 }
 
-/* CONTENT AREA */
 .main-content{
     flex:1;
     padding:25px;
@@ -139,7 +126,6 @@ button{
     margin-bottom:20px;
 }
 
-/* TABLE STYLE */
 table{
     width:100%;
     border-collapse:collapse;
@@ -147,7 +133,7 @@ table{
     border:1px solid #ccc;
 }
 
-/* light header for tables in dashboard */
+
 .main-content table th{
     background:#f2f2f2;
     color:#333;
@@ -164,7 +150,7 @@ table tr:hover{
     background:#f2f2f2;
 }
 
-/* FORM BOX */
+
 .form-box{
     width:400px;
     background:white;
@@ -182,7 +168,7 @@ table tr:hover{
     border:1px solid #ccc;
 }
 
-/* Panel used on admin add-user page */
+
 .form-panel{
     width:520px;
 
